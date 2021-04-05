@@ -1,0 +1,56 @@
+ <div class="container">
+      <div style="color: white;background: black">
+        <strong style="color: white"> Reset Account Details</strong>
+      </div>
+      <div class="head1 ">
+        <div onclick="swap(this)"   data-tab="user"  class="user-tab">Password</div>
+        <div onclick="swap(this)" data-tab="technician"  class="technician-tab">Address</div>
+      </div>
+  <div class="body" id="form-body">
+      <div class="user form-group">   
+            <div>Current Password:</div>
+            <div class="form-row">
+              <input type="password"  class="form-control"  placeholder="current"   [(ngModel)]="pass3">
+            </div>
+            <div>New Password:</div>
+            <div class="form-row">
+              <input type="password" class="form-control"  placeholder="new"  [(ngModel)]="pass1" >
+            </div>
+            
+            <div>Confirm Password:</div>
+            <div class="form-row">
+              <input type="password" class="form-control" (ngModelChange)="validate($event)" placeholder="confirm" [(ngModel)]="pass2" >
+            </div>
+            <div><span style="color: red" id="sp">{{msg}}</span></div>
+            <div >
+              <button  class="log" (click)="change()" >Change</button>
+            </div>   
+          </div>  
+      
+
+      
+      <div class="technician ">
+         
+            <div> city:</div>
+            <div class="form-row">
+             <input type="text" class="form-control" placeholder="city" [(ngModel)]="city">
+            </div>
+            <div> State:</div>
+            <div class="form-row">
+             <input type="text" class="form-control" placeholder="state" [(ngModel)]="state">
+            </div>
+            <div> Pincode:</div>
+            <div class="form-row">
+             <input type="text" class="form-control" placeholder="pincode" [(ngModel)]="pincode">
+            </div>
+            <div>
+                <button class="log" (click)="update()" >Update</button>
+            </div>
+             
+      </div>
+  </div>
+</div>
+
+
+
+  

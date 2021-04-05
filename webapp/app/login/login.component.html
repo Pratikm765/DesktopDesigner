@@ -1,0 +1,35 @@
+<div class="form">
+  
+    <div style="color: white;background: black;text-align: center">
+        <strong style="color: white"> Login Here</strong>
+      </div>
+    <div class="imgcontainer">
+        <img src="../../assets/image/sample2.png" alt="Avatar" class="avatar">
+      </div>
+
+    <div class="body" id="form-body">
+       
+              <div>Email:</div>
+              <div class="form-row">
+                <input type="email" required class="form-control" placeholder="Email" [(ngModel)]=user.email>
+              </div>
+              <div>Password:</div>
+              <div class="form-row">
+                <input type="password" class="form-control" placeholder="password" [(ngModel)]=user.password>
+              </div>
+              <div class="form-row center">
+                <br>
+                <button type="button" class="btn btn-success log" style="color: black" (click)="loginUser()">Sign In</button>&nbsp;
+                <button type="button" class="btn btn-danger log" (click)="cancel()">Cancel</button>
+              </div>
+              <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          
+    </div>
+
+  </div>
+  
+  

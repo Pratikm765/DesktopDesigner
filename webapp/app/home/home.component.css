@@ -1,0 +1,25 @@
+*{
+    color: white;
+}
+.intro{
+  
+    font-weight: 400;
+    font-size: 62px;
+}
+.intro1{
+   
+    font-weight: 400;
+    font-size: 22px;
+}
+ul{
+    font-size: 15px;
+}
+.intro2{
+    width:fit-content;
+    opacity: 50%;
+    background-color: grey;
+    border: #f1f1f1;
+    padding: 10px 10px; 
+    text-decoration: none;
+    font-size: 15px;
+}

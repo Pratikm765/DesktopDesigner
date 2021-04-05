@@ -1,0 +1,87 @@
+
+<div class="form">
+    <div style="color: white;background: black">
+        <strong style="color: white"> Registration Form</strong>
+      </div>
+  <div class="head1 ">
+    <div onclick="swap(this)"   data-tab="user"  class="user-tab">User</div>
+    <div onclick="swap(this)" data-tab="technician"  class="technician-tab">Technician</div>
+  </div>
+  <div class="body" id="form-body">
+      <div class="user">
+            <br>
+            <div>First Name:</div>
+            <div class="form-row">
+              <input type="text" class="form-control" placeholder="First Name" [(ngModel)]="user.fname">
+            </div>
+            <div>Last Name:</div>
+            <div class="form-row">
+              <input type="text" class="form-control" placeholder="Last Name" [(ngModel)]=user.lname>
+            </div>
+            <div>Email:</div>
+            <div class="form-row">
+              <input type="email" class="form-control" placeholder="Email" [(ngModel)]=user.email>
+            </div>
+            <div>Password:</div>
+            <div class="form-row">
+              <input type="password" class="form-control" placeholder="password" [(ngModel)]=user.password>
+            </div>
+            <div>City:</div>
+            <div class="form-row">
+              <input type="text" class="form-control" placeholder="city" [(ngModel)]=user.city>
+            </div>
+            <div>State:</div>
+            <div class="form-row">
+              <input type="text" class="form-control" placeholder="state" [(ngModel)]=user.state>
+            </div>
+            <div>pincode:</div>
+            <div class="form-row">
+              <input type="text" class="form-control" placeholder="pincode" [(ngModel)]=user.pincode>
+            </div>
+            <div >
+              <button class="log" (click)="userReg()">Sign Up</button>
+            </div>
+      </div>
+
+      <div class="technician ">
+          <br>
+            <div>First Name:</div>
+            <div class="form-row">
+              <input type="text" class="form-control" placeholder="First Name" [(ngModel)]=tech.fname>
+            </div>
+            <div> Last Name:</div>
+            <div class="form-row">
+             <input type="text" class="form-control"  placeholder="Last Name" [(ngModel)]=tech.lname>
+            </div>
+            <div>Email:</div>
+            <div class="form-row">
+              <input type="email" class="form-control" placeholder="Email" [(ngModel)]=tech.email>
+            </div>
+            <div> city:</div>
+            <div class="form-row">
+             <input type="text" class="form-control" placeholder="city" [(ngModel)]=tech.city>
+            </div>
+            <div> State:</div>
+            <div class="form-row">
+             <input type="text" class="form-control" placeholder="state" [(ngModel)]=tech.state>
+            </div>
+            <div> Pincode:</div>
+            <div class="form-row">
+             <input type="text" class="form-control" placeholder="pincode" [(ngModel)]=tech.pincode>
+            </div>
+            <div>Contact No:</div>
+            <div class="form-row ">
+              <input type="text" class="form-control  " placeholder="contact" [(ngModel)]=tech.contact>
+            </div>
+            <div>Qualification:</div>
+            <div class="form-row">
+             <textarea  class="form-control" [(ngModel)]=tech.qualification></textarea>
+            </div>
+            <div>
+                <button class="log" (click)="techReg()" >Register</button>
+            </div>
+             
+      </div>
+  </div>
+</div>
+

@@ -1,0 +1,51 @@
+@font-face{
+  font-family: mySecondFont;
+  src: url('../../../assets/FONTS/Staatliches-Regular.ttf');
+}
+
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+  bottom: .5em;
+}
+
+*{
+  font-size: 14px;
+  font-family: mySecondFont;
+  cursor: pointer;
+}
+.head{
+  font-size: 25px;
+  color: white;
+}
+.table tr.active td {
+  background-color:gray !important;
+  color: white;
+}
+#abgb{
+  background: url(../../../assets/image/abgb.png) no-repeat;
+  width: 100px;
+  height: 40px;
+  background-size:contain;
+}
+#amazon{
+  background: url(../../../assets/image/amazon.jpg) no-repeat;
+  width: 100px;
+  height: 40px;
+  background-size:contain;
+  
+}
+#mdcom{
+  background: url(../../../assets/image/md.png) no-repeat;
+  width: 100px;
+  height: 40px;
+  background-size:contain;
+}

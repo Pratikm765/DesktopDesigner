@@ -1,0 +1,59 @@
+  <header>
+      <nav>
+        <h1>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          Desktop Designer
+        </h1>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link homered" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link homeblack" routerLink="/design" (click)="sendToCust()">Design Your Desktop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link homeblack" href="#">Our Designs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link homeblack" href="#">News Forum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link homeblack" href="#">Tutorials</a>
+              </li>
+         
+              <li class="logtxt" style="color: cornflowerblue"><span class="glyphicon glyphicon-user" style="font-size: 30px;margin-top: 10px;margin-left: 30px;color: white"></span><strong>&nbsp;&nbsp;&nbsp;{{logFname}}&nbsp;&nbsp;{{logLname}}</strong></li>
+              
+              
+            </ul>
+          </div>
+      </nav>
+  </header>
+
+  <div class="divider"> </div>
+
+  <div class="logreg pull-right"> 
+      <a (click)="sendToLogin()">{{Login}}</a>
+      <a routerLink="/register">Register</a>
+  </div>
+
+
+  <div id="mySidenav" class="sidenav ">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Profile</a>
+    <a (click)="sendToUpdate()">Account Setting</a>
+    <a href="#" (click)='logout()'>Logout</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+
+
+  <div class="fw1image" >
+    <router-outlet></router-outlet>
+  </div>
+<footer style="background-color: black;color: red"><div class="ftr">
+  <h3>Developed by</h3>
+</div></footer>
+
+ 
+

@@ -1,0 +1,39 @@
+<div style="text-align: center"><h3 class="pull-left head">Select Monitor:</h3><button mdbBtn type="button" color="light-blue" mdbWavesEffect (click)="next()" >NEXT</button></div>
+<table   mdbTable mdbTableScroll scrollY="true" maxHeight="600" maxWidth="300" class=""  hover="true"  style="background: white;">
+   
+  <thead class="red black-text">
+    <tr >
+        
+        <th>Model</th>
+        <th>Image</th>
+        <th>Brand</th>
+        <th>Type</th>
+        <th>Screen Size</th>
+        <th>Screen Resolution</th>
+        <th>Aspect Ratio</th>
+        <th>Prime Abgb</th>
+        <th>Amazon</th>
+        <th>Md Computers</th>
+        <th [mdbTableSort]="elements" [sortBy]="headElement" >{{headElement}}
+          <mdb-icon icon="sort"></mdb-icon>
+        </th>
+      
+    </tr>
+  </thead>
+  <tbody>
+     <tr *ngFor="let el of elements" scope="row" (click)="selectRow(el.product_Id)" [class.active]="el.product_Id == row"> 
+      <!-- <th >{{el.product_Id}}</th> -->
+      <td>{{el.monitor_Model}}</td>
+      <td><img src="../../../assets/Monitor/{{el.image}}" style="width: 120px;height: 105px;"></td>
+      <td>{{el.brand}}</td>
+      <td>{{el.type}}</td>
+      <td>{{el.screen_Size}}</td>
+      <td>{{el.display_Resolution}}</td>
+      <td>{{el.aspect_Ratio}}</td>      
+      <td><a type="button" id="abgb"  mdbBtn target="_blank"  href="{{el.link_Primeabgb}}"></a></td>
+      <td><a type="button" id="amazon" mdbBtn target="_blank"  href="{{el.link_Amazon}}"></a></td>
+      <td><a type="button" id="mdcom" mdbBtn target="_blank" href="{{el.link_Mdcomputers}}"></a></td>
+      <td>{{el.price}}</td>
+    </tr> 
+  </tbody>
+</table>
